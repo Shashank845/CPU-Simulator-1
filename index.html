@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scheduling Simulator</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>CPU Scheduling Simulator</h1>
+    </div>
+
+    <div class="section"><div class="input">
+        <label>Number of processes:-&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input id="num" type="number" min="2" value="1">
+        
+        <label>Select Algorithm:</label>
+    <select id="algo">
+    <option value="fcfs">FCFS (First Come First Serve)</option>
+      <option value="sjf">SJF Shortest Job First (Non-preemptive)</option>
+      <option value="priority">Priority Scheduling (Non-preemptive)</option>
+      <option value="srtf">SRTF Shortest Remaining Time First</option>
+      <option value="priority_preemptive">Priority Scheduling (Preemptive)</option>
+    </select><br>
+    
+      <div id="inputArea"></div>
+        <button  onclick="runAlgo()">Run</button>
+    </div>
+    
+      <div class="result">
+        <pre id="output"></pre>
+      </div></div>
+      <div class="footer">Thank You! Visit Again</div>
+  <script src="input.js"></script>
+  <script src="fcfs.js"></script>
+  <script src="main.js"></script>
+  <script src="srtf.js"></script>
+  <script src="sjf.js"></script>
+  <script src="priorityScheduling.js"></script>
+  <script src="priority_preemptive.js"></script>
+  <script src="gantt.js"></script>
+</body>
+</html>
